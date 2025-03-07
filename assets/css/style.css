@@ -1,11 +1,3 @@
-/**
-* Template Name: iPortfolio
-* Updated: May 30 2023 with Bootstrap v5.3.0
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
@@ -364,16 +356,16 @@ section {
 
 .image-container img {
   width: 100%;
-  max-width: 350px; /* Prevents oversized image */
+  max-width: 350px;
   height: auto;
 }
 
-/* Mobile Responsive Fix */
+
 @media (max-width: 768px) {
   .about-content {
     flex-direction: column;
     text-align: center;
-    gap: 20px; /* Reduce extra spacing */
+    gap: 20px;
   }
 
   .text-container {
@@ -389,7 +381,7 @@ section {
   }
 
   .image-container img {
-    max-width: 90%; /* Ensure image scales properly */
+    max-width: 90%;
   }
 }
 
@@ -399,7 +391,6 @@ section {
   padding: 10px 20px;
   margin-top: 20px;
   background-color: #007bff;
-  /* Blue color */
   color: #fff;
   text-decoration: none;
   font-size: 16px;
@@ -410,7 +401,6 @@ section {
 
 .download-btn:hover {
   background-color: #0056b3;
-  /* Darker blue on hover */
 }
 
 
@@ -423,15 +413,15 @@ section {
 # Skills
 --------------------------------------------------------------*/
 .skills-section {
-  padding: 50px 20px; /* Added padding for small screens */
+  padding: 50px 20px;
   text-align: center;
   background-color: #149ddd;
 }
 
 .skills-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
-  gap: 20px; /* Reduced gap for better spacing */
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
   max-width: 1100px;
   margin: auto;
 }
@@ -469,14 +459,14 @@ section {
 /* Mobile Responsive Fix */
 @media (max-width: 768px) {
   .skills-container {
-    grid-template-columns: repeat(2, 1fr); /* Show 2 items per row */
+    grid-template-columns: repeat(2, 1fr);
     gap: 15px;
   }
 }
 
 @media (max-width: 480px) {
   .skills-container {
-    grid-template-columns: 1fr; /* Stack items in a single column */
+    grid-template-columns: 1fr;
   }
 }
 
@@ -513,16 +503,16 @@ section {
 
 .blog-section {
   display: flex;
-  justify-content: center; /* Centered alignment */
+  justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
-  padding: 20px; /* Added padding for spacing */
+  padding: 20px;
 }
 
 .blog-card {
   background: white;
-  width: calc(33.33% - 20px); /* Dynamic width with gap compensation */
-  max-width: 350px; /* Prevents cards from becoming too large */
+  width: calc(33.33% - 20px);
+  max-width: 350px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
@@ -579,16 +569,16 @@ section {
   color: #149ddd;
 }
 
-/* Mobile Responsive Fix */
+
 @media (max-width: 1024px) {
   .blog-card {
-    width: calc(50% - 20px); /* 2 cards per row */
+    width: calc(50% - 20px);
   }
 }
 
 @media (max-width: 600px) {
   .blog-card {
-    width: 100%; /* Stack in a single column */
+    width: 100%;
   }
 }
 
