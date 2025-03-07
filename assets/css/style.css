@@ -276,7 +276,7 @@ h6 {
   margin-bottom: 50px;
   margin-left: 80px;
   font-size: 26px;
- 
+
 }
 
 #hero p span {
@@ -377,27 +377,32 @@ section {
   color: #149ddd;
   line-height: 0;
 }
+
 .about-content {
   display: flex;
-  
-  gap: 150px; /* Adjusts space between image and text */
+
+  gap: 150px;
+  /* Adjusts space between image and text */
 }
 
 .image-container img {
-  max-width: 400px; /* Adjust image size */
+  max-width: 400px;
+  /* Adjust image size */
   border-radius: 10px;
 }
 
 .text-container {
-  flex: 1; 
+  flex: 1;
   padding-top: 50px;
   text-align: justify;
 }
+
 .download-btn {
   display: inline-block;
   padding: 10px 20px;
   margin-top: 20px;
-  background-color: #007bff; /* Blue color */
+  background-color: #007bff;
+  /* Blue color */
   color: #fff;
   text-decoration: none;
   font-size: 16px;
@@ -407,7 +412,8 @@ section {
 }
 
 .download-btn:hover {
-  background-color: #0056b3; /* Darker blue on hover */
+  background-color: #0056b3;
+  /* Darker blue on hover */
 }
 
 
@@ -466,63 +472,44 @@ section {
 /*--------------------------------------------------------------
 # Resume
 --------------------------------------------------------------*/
-.resume .resume-title {
-  font-size: 26px;
-  font-weight: 700;
-  margin-top: 20px;
+.filter-buttons {
+  display: flex;
+  justify-content: center;
   margin-bottom: 20px;
-  color: #050d18;
 }
 
-.resume .resume-item {
-  padding: 0 0 20px 20px;
-  margin-top: -2px;
-  border-left: 2px solid #1f5297;
-  position: relative;
-}
-
-.resume .resume-item h4 {
-  line-height: 18px;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  font-family: "Poppins", sans-serif;
-  color: #050d18;
-  margin-bottom: 10px;
-}
-
-.resume .resume-item h5 {
-  font-size: 16px;
-  background: #e4edf9;
-  padding: 5px 15px;
-  display: inline-block;
-  font-weight: 600;
-  margin-bottom: 10px;
-}
-
-.resume .resume-item ul {
-  padding-left: 20px;
-}
-
-.resume .resume-item ul li {
-  padding-bottom: 10px;
-}
-
-.resume .resume-item:last-child {
-  padding-bottom: 0;
-}
-
-.resume .resume-item::before {
-  content: "";
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  border-radius: 50px;
-  left: -9px;
-  top: 0;
+.filter-buttons button {
   background: #fff;
-  border: 2px solid #1f5297;
+  border: 2px solid #000;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin: 5px;
+  font-size: 16px;
 }
+
+.filter-buttons button.active {
+  background: #000;
+  color: #fff;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.gallery-item {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+}
+
 
 /*--------------------------------------------------------------
 
@@ -538,22 +525,26 @@ section {
   flex-wrap: wrap;
   gap: 20px;
 }
+
 .blog-card {
   background: white;
   width: 30%;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   overflow: hidden;
   text-align: left;
   position: relative;
 }
+
 .blog-card img {
   width: 100%;
   height: auto;
 }
+
 .blog-content {
   padding: 15px;
 }
+
 .blog-date {
   position: absolute;
   top: 10px;
@@ -564,14 +555,17 @@ section {
   font-size: 14px;
   border-radius: 3px;
 }
+
 .blog-title {
   font-size: 18px;
   font-weight: bold;
 }
+
 .blog-author {
   color: gray;
   font-size: 14px;
 }
+
 .read-more {
   display: block;
   margin-top: 10px;
@@ -579,6 +573,7 @@ section {
   text-decoration: none;
   font-weight: bold;
 }
+
 /*--------------------------------------------------------------
 
 # Contact
@@ -589,23 +584,27 @@ section {
 
 .contact-container {
   max-width: 800px;
- 
+
   background: #fff;
-  
+
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
 }
+
 h2 {
   margin-bottom: 10px;
   margin-left: 0%;
 }
+
 .contact-form {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 10px;
 }
-.contact-form input, .contact-form textarea {
+
+.contact-form input,
+.contact-form textarea {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
@@ -613,10 +612,12 @@ h2 {
   background: #414450;
   color: white;
 }
+
 .contact-form textarea {
   height: 150px;
   resize: none;
 }
+
 .contact-form button {
   background: #007bff;
   color: white;
@@ -626,9 +627,11 @@ h2 {
   border-radius: 5px;
   font-size: 16px;
 }
+
 .contact-form button:hover {
   background: #555;
 }
+
 /*--------------------------------------------------------------
 
 # Footer
