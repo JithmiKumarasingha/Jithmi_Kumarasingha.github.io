@@ -58,7 +58,6 @@
           <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
           <li><a href="#skills" class="nav-link scrollto"><i class="bi bi-bookmark-plus-fill"></i> <span>Skills</span></a></li>
           <li><a href="#projects" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Projects</span></a></li>
-
           <li><a href="#blogs" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Blogs</span></a></li>
           <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
         </ul>
@@ -261,132 +260,61 @@
         <div class="section-title">
           <h2>My Blogs...</h2>
         </div>
-
-        <div class="row">
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
-            <div class="icon"><i class="bi bi-briefcase"></i></div>
-            <h4 class="title"><a href="">Web Development</a></h4>
-            <p class="description"> Creating web applications using React JS, Spring Boot</p>
+        <div class="blog-section">
+          <div class="blog-card">
+              <span class="blog-date">26 June</span>
+              <img src="assets/img/ds.png" >
+              <div class="blog-content">
+                  <p class="blog-title">What is Data Science?</p>
+                  <p class="blog-author">by Jithmi Kumarasingha Jun 26, 2023</p>
+                  <a href="https://medium.com/@jithmikumarasingha/what-is-data-science-9d2a16b96278" class="read-more">Read more</a>
+              </div>
           </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
-            <div class="icon"><i class="bi bi-images"></i></div>
-            <h4 class="title"><a href="">Designing UI</a></h4>
-            <p class="description">Designing user interfaces using Figma</p>
+          <div class="blog-card">
+              <span class="blog-date">28 July</span>
+              <img src="assets/img/redux.png" >
+              <div class="blog-content">
+                  <p class="blog-title">What is Redux-Saga?</p>
+                  <p class="blog-author">by Jithmi Kumarasingha Mar 27, 2024</p>
+                  <a href="https://medium.com/@jithmikumarasingha/what-is-redux-saga-f39f9a980e14" class="read-more">Read more</a>
+              </div>
           </div>
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
-            <div class="icon"><i class="bi bi-pencil-square"></i></div>
-            <h4 class="title"><a href="">Writing articles</a></h4>
-            <p class="description">Writing creative articles which are related to IT industry in medium</article>
-            </p>
-          </div>
-
-
-
-          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
-            <div class="icon"><i class="bi bi-book"></i></div>
-            <h4 class="title"><a href="">Reading for the Degree</a></h4>
-            <p class="description">Reading for the Information Technology degree in University of Moratuwa as an
-              internal undergraduate</p>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Services Section -->
+          <div class="blog-card">
+              <span class="blog-date">29 October</span>
+              <img src="assets/img/hb.jpeg" >
+              <div class="blog-content">
+                  <p class="blog-title">Start with Handlebars.</p>
+                  <p class="blog-author">by Jithmi Kumarasingha Oct 3, 2024</p>
+                  <a href="https://medium.com/@jithmikumarasingha/start-with-handlebars-7e926d1e6c9e" class="read-more">Read more</a>
+              </div>
+          </div><!-- End Services Section -->
 
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
       <div class="container">
-
         <div class="section-title">
-          <h2>Contact</h2>
-
+          <h2>Contact Me...</h2>
         </div>
-
-        <div class="row" data-aos="fade-in">
-
-          <div class="col-lg-5 d-flex align-items-stretch">
-            <div class="info">
-              <div class="address">
-                <i class="bi bi-geo-alt"></i>
-                <h4>Location:</h4>
-                <p>Kottawa , Pannipitiya.</p>
-              </div>
-
-              <div class="email">
-                <i class="bi bi-envelope"></i>
-                <h4>Email:</h4>
-                <p>jithmikumarasingha@gmail.com</p>
-              </div>
-
-              <div class="phone">
-                <i class="bi bi-phone"></i>
-                <h4>Call:</h4>
-                <p>(+94) 76 570 9964</p>
-              </div>
-              <div class="mapouter">
-                <div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0"
-                    marginwidth="0"
-                    src="https://maps.google.com/maps?width=300&amp;height=350&amp;hl=en&amp;q=pannipitiya&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
-                    href="https://gachanox.io/">Gacha Nox</a></div>
-                <style>
-                  .mapouter {
-                    position: relative;
-                    text-align: right;
-                    width: 300px;
-                    height: 350px;
-                  }
-
-                  .gmap_canvas {
-                    overflow: hidden;
-                    background: none !important;
-                    width: 300px;
-                    height: 350px;
-                  }
-
-                  .gmap_iframe {
-                    width: 300px !important;
-                    height: 350px !important;
-                  }
-                </style>
-              </div>
-            </div>
-
+        <div class="about-content">
+          <div class="text-container">
+            <form class="contact-form">
+              <input type="text" placeholder="Your Name" required>
+              <input type="email" placeholder="Your Email" required>
+              <input type="tel" placeholder="Your Phone" required>
+              <textarea placeholder="Your Message" required></textarea>
+              <button type="submit">Send Message</button>
+          </form>
+            
           </div>
-
-          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="form-group col-md-6">
-                  <label for="name">Your Name</label>
-                  <input type="text" name="name" class="form-control" id="name" required>
-                </div>
-                <div class="form-group col-md-6">
-                  <label for="name">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email" required>
-                </div>
-              </div>
-              <div class="form-group">
-                <label for="name">Subject</label>
-                <input type="text" class="form-control" name="subject" id="subject" required>
-              </div>
-              <div class="form-group">
-                <label for="name">Message</label>
-                <textarea class="form-control" name="message" rows="10" required></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Loading</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
-              </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
-            </form>
+          <div class="image-container">
+           
           </div>
 
         </div>
-
       </div>
-    </section><!-- End Contact Section -->
+    </section>
+</section><!-- End Contact Section -->
 
   </main><!-- End #main -->
 
